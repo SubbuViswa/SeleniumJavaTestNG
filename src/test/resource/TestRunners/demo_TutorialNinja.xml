@@ -1,0 +1,12 @@
+<suite name="Suite" parallel="tests">
+	<listeners>
+		<listener class-name="com.subbu.listeners.RerunFailedCases">
+		</listener>
+	</listeners>
+	<test thread-count="3" name="Tutorial Ninja Registration">
+		<classes>
+			<class name="com.subbu.tests.Tutorials_Ninja_Test" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite>

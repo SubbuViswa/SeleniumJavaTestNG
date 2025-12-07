@@ -1,0 +1,354 @@
+19:59:16.193 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+19:59:16.343 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.22.0
+19:59:16.344 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+19:59:16.602 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+19:59:16.602 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+19:59:16.602 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.a(Unknown Source)
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+
+19:59:16.820 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+19:59:17.423 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\Subbulakshmi.K\.browserstack already exist
+19:59:17.430 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\Subbulakshmi.K\.browserstack\cli\binary-win-x64.exe
+19:59:20.599 [main] ERROR com.browserstack.v2.SdkCliUtils - Error in setting up cli path directory, Exception: java.lang.NullPointerException: Parameter specified as non-null is null: method browserstack.shaded.okhttp3.Credentials.basic$default, parameter username
+	at browserstack.shaded.okhttp3.Credentials.basic(Unknown Source)
+	at browserstack.shaded.okhttp3.Credentials.basic$default(Unknown Source)
+	at browserstack.shaded.okhttp3.Credentials.basic(Unknown Source)
+	at com.browserstack.v2.SdkCliUtils.a(Unknown Source)
+	at com.browserstack.v2.SdkCliUtils.checkAndUpdateCli(Unknown Source)
+	at com.browserstack.v2.SdkCliUtils.setupCliPath(Unknown Source)
+	at com.browserstack.v2.SdkCLI.<clinit>(Unknown Source)
+	at com.browserstack.monitoring.PerformanceTester.measure(Unknown Source)
+	at com.browserstack.monitoring.PerformanceTester.end(Unknown Source)
+	at com.browserstack.testNgListeners.BrowserstackSuiteListener.a(Unknown Source)
+	at com.browserstack.testNgListeners.BrowserstackSuiteListener.onStart(Unknown Source)
+	at org.testng.SuiteRunner.invokeListeners(SuiteRunner.java:242)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:310)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+19:59:25.673 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+19:59:25.673 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+19:59:26.595 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+19:59:26.595 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+19:59:33.921 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+19:59:33.924 [main] DEBUG c.b.utils.FunnelInstrumentation - Error in getting Product:
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.browserstack.config.BrowserStackConfig.getFramework()" is null
+	at com.browserstack.utils.FunnelInstrumentation.a(Unknown Source)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1034)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.anyMatch(ReferencePipeline.java:632)
+	at com.browserstack.utils.FunnelInstrumentation.getProducts(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.createParamsForEvent(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.testNgListeners.TmpSuiteListener.onFinish(Unknown Source)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:900)
+	at org.testng.TestRunner.afterRun(TestRunner.java:855)
+	at org.testng.TestRunner.run(TestRunner.java:618)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+19:59:33.925 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+19:59:33.927 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Couldn't find dependency class: appium
+19:59:33.971 [main] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TEST REPORTING AND ANALYTICS
+19:59:33.971 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+19:59:33.987 [main] TRACE c.b.t.TestOrchestrationUtils - getInstrumentationData: invoked
+19:59:33.992 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"[REDACTED]","userName":"[REDACTED]","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"b61443d5-444b-4c58-a337-a8aef5b62d21","buildIdentifier":"unknown","testhub_uuid":"","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":null,"automate":true,"percy":false,"observability":false,"turboscale":false},"hostname":"ISCHLAPHP221028","measures":{"sdk:pre-test":8.02930000424385},"productUsage":{"testObservability":{"buildHashedId":"","manuallySet":false,"enabled":false}},"browserStackConfig":{"browserstackLocal":null,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"AUTO","browserStackLocalOptions":null,"percyOptions":null,"testContextOptions":{"serenityOverridePlugin":false,"skipSessionStatus":false,"skipSessionName":false},"platforms":null,"parallelsPerPlatform":null,"framework":null,"accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"overrideLoadTesting":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"automationFrameworkVersion":null,"percyBuildId":null,"product":"[automate]","buildName":"unknown","os":"Windows 11","languageVersion":"21.0.7","appiumVersion":"null","frameworkDetectionInstrumentation":{},"detectedDependencies":"","referrer":"unknown","locationTrigger":"onFinish","accessibilityConfiguration":{"pollingTimeout":30},"language_framework":"unknown","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.22.0","automationFramework":"selenium","seleniumVersion":"null"}}
+19:59:33.992 [main] DEBUG c.b.utils.FunnelInstrumentation - sendAmplitudeEvent failed:
+java.lang.NullPointerException: Parameter specified as non-null is null: method browserstack.shaded.okhttp3.Credentials.basic$default, parameter username
+	at browserstack.shaded.okhttp3.Credentials.basic(Unknown Source)
+	at browserstack.shaded.okhttp3.Credentials.basic$default(Unknown Source)
+	at browserstack.shaded.okhttp3.Credentials.basic(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.fireRequest(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.testNgListeners.TmpSuiteListener.onFinish(Unknown Source)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:900)
+	at org.testng.TestRunner.afterRun(TestRunner.java:855)
+	at org.testng.TestRunner.run(TestRunner.java:618)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+19:59:33.993 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+19:59:33.993 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+19:59:33.994 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+19:59:33.994 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+19:59:34.273 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG\log\key-metrics.json
+19:59:34.274 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+19:59:34.274 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+05:16:04.999 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+05:16:05.147 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.22.0
+05:16:05.149 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+05:16:05.406 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+05:16:05.406 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+05:16:05.407 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.a(Unknown Source)
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+
+05:16:05.673 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+05:16:06.209 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\Subbulakshmi.K\.browserstack already exist
+05:16:06.212 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\Subbulakshmi.K\.browserstack\cli\binary-win-x64.exe
+05:16:13.060 [main] ERROR com.browserstack.v2.SdkCliUtils - Error in setting up cli path directory, Exception: java.lang.NullPointerException: Parameter specified as non-null is null: method browserstack.shaded.okhttp3.Credentials.basic$default, parameter username
+	at browserstack.shaded.okhttp3.Credentials.basic(Unknown Source)
+	at browserstack.shaded.okhttp3.Credentials.basic$default(Unknown Source)
+	at browserstack.shaded.okhttp3.Credentials.basic(Unknown Source)
+	at com.browserstack.v2.SdkCliUtils.a(Unknown Source)
+	at com.browserstack.v2.SdkCliUtils.checkAndUpdateCli(Unknown Source)
+	at com.browserstack.v2.SdkCliUtils.setupCliPath(Unknown Source)
+	at com.browserstack.v2.SdkCLI.<clinit>(Unknown Source)
+	at com.browserstack.monitoring.PerformanceTester.measure(Unknown Source)
+	at com.browserstack.monitoring.PerformanceTester.end(Unknown Source)
+	at com.browserstack.testNgListeners.BrowserstackSuiteListener.a(Unknown Source)
+	at com.browserstack.testNgListeners.BrowserstackSuiteListener.onStart(Unknown Source)
+	at org.testng.SuiteRunner.invokeListeners(SuiteRunner.java:242)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:310)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+05:16:13.084 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG\log\key-metrics.json
+05:16:15.484 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+05:16:15.487 [main] DEBUG c.b.utils.FunnelInstrumentation - Error in getting Product:
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.browserstack.config.BrowserStackConfig.getFramework()" is null
+	at com.browserstack.utils.FunnelInstrumentation.a(Unknown Source)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1034)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.anyMatch(ReferencePipeline.java:632)
+	at com.browserstack.utils.FunnelInstrumentation.getProducts(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.createParamsForEvent(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.testNgListeners.TmpSuiteListener.onFinish(Unknown Source)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:900)
+	at org.testng.TestRunner.afterRun(TestRunner.java:855)
+	at org.testng.TestRunner.run(TestRunner.java:618)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+05:16:15.489 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+05:16:15.503 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Couldn't find dependency class: appium
+05:16:15.536 [main] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TEST REPORTING AND ANALYTICS
+05:16:15.537 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+05:16:15.569 [main] TRACE c.b.t.TestOrchestrationUtils - getInstrumentationData: invoked
+05:16:15.578 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"[REDACTED]","userName":"[REDACTED]","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"f5928120-1daa-4032-8dca-bca174311775","buildIdentifier":"unknown","testhub_uuid":"","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":null,"automate":true,"percy":false,"observability":false,"turboscale":false},"hostname":"ISCHLAPHP221028","measures":{"sdk:pre-test":7.964699983596802},"productUsage":{"testObservability":{"buildHashedId":"","manuallySet":false,"enabled":false}},"browserStackConfig":{"browserstackLocal":null,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"AUTO","browserStackLocalOptions":null,"percyOptions":null,"testContextOptions":{"skipSessionStatus":false,"serenityOverridePlugin":false,"skipSessionName":false},"platforms":null,"parallelsPerPlatform":null,"framework":null,"accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"overrideLoadTesting":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"automationFrameworkVersion":null,"percyBuildId":null,"product":"[automate]","buildName":"unknown","os":"Windows 11","languageVersion":"21.0.7","appiumVersion":"null","frameworkDetectionInstrumentation":{},"detectedDependencies":"","referrer":"unknown","locationTrigger":"onFinish","accessibilityConfiguration":{"pollingTimeout":30},"language_framework":"unknown","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.22.0","automationFramework":"selenium","seleniumVersion":"null"}}
+05:16:15.578 [main] DEBUG c.b.utils.FunnelInstrumentation - sendAmplitudeEvent failed:
+java.lang.NullPointerException: Parameter specified as non-null is null: method browserstack.shaded.okhttp3.Credentials.basic$default, parameter username
+	at browserstack.shaded.okhttp3.Credentials.basic(Unknown Source)
+	at browserstack.shaded.okhttp3.Credentials.basic$default(Unknown Source)
+	at browserstack.shaded.okhttp3.Credentials.basic(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.fireRequest(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.testNgListeners.TmpSuiteListener.onFinish(Unknown Source)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:900)
+	at org.testng.TestRunner.afterRun(TestRunner.java:855)
+	at org.testng.TestRunner.run(TestRunner.java:618)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+05:16:15.580 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:16:15.580 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+05:16:15.581 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:16:15.581 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+05:16:15.638 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG\log\key-metrics.json
+05:16:15.639 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:16:15.639 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+05:16:27.413 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+05:16:27.552 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.22.0
+05:16:27.553 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+05:16:27.741 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+05:16:27.741 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+05:16:27.742 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.a(Unknown Source)
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+
+05:16:27.915 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+05:16:28.268 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\Subbulakshmi.K\.browserstack already exist
+05:16:28.270 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\Subbulakshmi.K\.browserstack\cli\binary-win-x64.exe
+05:16:28.754 [main] ERROR com.browserstack.v2.SdkCliUtils - Error in setting up cli path directory, Exception: java.lang.NullPointerException: Parameter specified as non-null is null: method browserstack.shaded.okhttp3.Credentials.basic$default, parameter username
+	at browserstack.shaded.okhttp3.Credentials.basic(Unknown Source)
+	at browserstack.shaded.okhttp3.Credentials.basic$default(Unknown Source)
+	at browserstack.shaded.okhttp3.Credentials.basic(Unknown Source)
+	at com.browserstack.v2.SdkCliUtils.a(Unknown Source)
+	at com.browserstack.v2.SdkCliUtils.checkAndUpdateCli(Unknown Source)
+	at com.browserstack.v2.SdkCliUtils.setupCliPath(Unknown Source)
+	at com.browserstack.v2.SdkCLI.<clinit>(Unknown Source)
+	at com.browserstack.monitoring.PerformanceTester.measure(Unknown Source)
+	at com.browserstack.monitoring.PerformanceTester.end(Unknown Source)
+	at com.browserstack.testNgListeners.BrowserstackSuiteListener.a(Unknown Source)
+	at com.browserstack.testNgListeners.BrowserstackSuiteListener.onStart(Unknown Source)
+	at org.testng.SuiteRunner.invokeListeners(SuiteRunner.java:242)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:310)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+05:16:28.764 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG\log\key-metrics.json
+05:16:30.936 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+05:16:30.939 [main] DEBUG c.b.utils.FunnelInstrumentation - Error in getting Product:
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.browserstack.config.BrowserStackConfig.getFramework()" is null
+	at com.browserstack.utils.FunnelInstrumentation.a(Unknown Source)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1034)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.anyMatch(ReferencePipeline.java:632)
+	at com.browserstack.utils.FunnelInstrumentation.getProducts(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.createParamsForEvent(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.testNgListeners.TmpSuiteListener.onFinish(Unknown Source)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:900)
+	at org.testng.TestRunner.afterRun(TestRunner.java:855)
+	at org.testng.TestRunner.run(TestRunner.java:618)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+05:16:30.940 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+05:16:30.951 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Couldn't find dependency class: appium
+05:16:30.987 [main] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TEST REPORTING AND ANALYTICS
+05:16:30.988 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+05:16:31.018 [main] TRACE c.b.t.TestOrchestrationUtils - getInstrumentationData: invoked
+05:16:31.028 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"[REDACTED]","userName":"[REDACTED]","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"6b21789d-0417-4129-aec4-9ded997435de","buildIdentifier":"unknown","testhub_uuid":"","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":null,"automate":true,"percy":false,"observability":false,"turboscale":false},"hostname":"ISCHLAPHP221028","measures":{"sdk:pre-test":4.738299995660782},"productUsage":{"testObservability":{"buildHashedId":"","manuallySet":false,"enabled":false}},"browserStackConfig":{"browserstackLocal":null,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"AUTO","browserStackLocalOptions":null,"percyOptions":null,"testContextOptions":{"serenityOverridePlugin":false,"skipSessionStatus":false,"skipSessionName":false},"platforms":null,"parallelsPerPlatform":null,"framework":null,"accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"overrideLoadTesting":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"automationFrameworkVersion":null,"percyBuildId":null,"product":"[automate]","buildName":"unknown","os":"Windows 11","languageVersion":"21.0.7","appiumVersion":"null","frameworkDetectionInstrumentation":{},"detectedDependencies":"","referrer":"unknown","locationTrigger":"onFinish","accessibilityConfiguration":{"pollingTimeout":30},"language_framework":"unknown","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.22.0","automationFramework":"selenium","seleniumVersion":"null"}}
+05:16:31.028 [main] DEBUG c.b.utils.FunnelInstrumentation - sendAmplitudeEvent failed:
+java.lang.NullPointerException: Parameter specified as non-null is null: method browserstack.shaded.okhttp3.Credentials.basic$default, parameter username
+	at browserstack.shaded.okhttp3.Credentials.basic(Unknown Source)
+	at browserstack.shaded.okhttp3.Credentials.basic$default(Unknown Source)
+	at browserstack.shaded.okhttp3.Credentials.basic(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.fireRequest(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.testNgListeners.TmpSuiteListener.onFinish(Unknown Source)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:900)
+	at org.testng.TestRunner.afterRun(TestRunner.java:855)
+	at org.testng.TestRunner.run(TestRunner.java:618)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+05:16:31.030 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:16:31.030 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+05:16:31.030 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:16:31.030 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+05:16:31.063 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG\log\key-metrics.json
+05:16:31.065 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:16:31.066 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
