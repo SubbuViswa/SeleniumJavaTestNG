@@ -352,3 +352,60 @@ java.lang.NullPointerException: Parameter specified as non-null is null: method 
 05:16:31.063 [main] DEBUG c.b.monitoring.PerformanceTester - Failed to append key metrics to file C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG\log\key-metrics.json
 05:16:31.065 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
 05:16:31.066 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+07:16:34.732 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+07:16:34.872 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.22.0
+07:16:34.873 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+07:16:35.068 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+07:16:35.068 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+07:16:35.069 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.a(Unknown Source)
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+
+07:16:35.248 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+03:59:34.324 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+03:59:34.648 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.22.0
+03:59:34.650 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+03:59:35.161 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+03:59:35.162 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+03:59:35.167 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.a(Unknown Source)
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+
+03:59:35.702 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
+04:00:15.860 [main] DEBUG c.browserstack.BrowserStackJavaAgent - Extracted CLI argument from system : null
+04:00:16.209 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.22.0
+04:00:16.210 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+04:00:16.655 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+04:00:16.655 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+04:00:16.658 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of C:\Users\Subbulakshmi.K\Downloads\subbu_test_automation\SeleniumJavaTestNG. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.a(Unknown Source)
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.startBrowserStackAgent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:560)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:572)
+
+04:00:17.138 [main] TRACE c.b.config.BrowserStackConfig - isGaugeTestOpsSession called with testObservabilityExplicit: false, framework: null, returning: false
